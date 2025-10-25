@@ -29,3 +29,5 @@ else ()
     # 如果想保持高警告等级但不把未使用参数/变量当作警告：
     target_compile_options(myapp PRIVATE -Wno-unused-parameter -Wno-unused-variable)
 endif ()
+
+add_executable(CPP20_4 main4.cpp)
