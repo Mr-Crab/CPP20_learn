@@ -18,3 +18,5 @@ target_sources(CPP20
 )
 
 target_include_directories(CPP20 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+add_executable(CPP20_2 main2.cpp)
