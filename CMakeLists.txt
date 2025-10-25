@@ -20,3 +20,12 @@ target_sources(CPP20
 target_include_directories(CPP20 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_executable(CPP20_2 main2.cpp)
+add_executable(CPP20_3 main3.cpp)
+if (MSVC)
+    target_compile_options(CPP20_3 PRIVATE /W4 /permissive- /wd4100)
+else ()
+    # 常用的 GCC/Clang 警告组合
+    target_compile_options(myapp PRIVATE -Wall -Wextra -Wpedantic)
+    # 如果想保持高警告等级但不把未使用参数/变量当作警告：
+    target_compile_options(myapp PRIVATE -Wno-unused-parameter -Wno-unused-variable)
+endif ()
