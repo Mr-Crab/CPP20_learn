@@ -31,3 +31,10 @@ else ()
 endif ()
 
 add_executable(CPP20_4 main4.cpp)
+add_executable(CPP20_5 main5.cpp)
+add_executable(CPP20_6 main6.cpp airline_ticket.cpp)
+target_sources(CPP20_6
+        PRIVATE
+        FILE_SET cxx_modules2 TYPE CXX_MODULES FILES
+        airline_ticket.cppm
+)
