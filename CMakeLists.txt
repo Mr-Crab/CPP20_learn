@@ -8,16 +8,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Add source files to the executable target
-add_executable(CPP20 main.cpp
+add_executable(CPP20_1 main.cpp
         employee.cppm)
 
-target_sources(CPP20
+target_sources(CPP20_1
     PRIVATE
         FILE_SET cxx_modules TYPE CXX_MODULES FILES
         employee.cppm
 )
 
-target_include_directories(CPP20 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(CPP20_1 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_executable(CPP20_2 main2.cpp)
 add_executable(CPP20_3 main3.cpp)
@@ -45,3 +45,5 @@ target_sources(CPP20_7
         FILE_SET cxx_modules3 TYPE CXX_MODULES FILES
         Rect.cppm
 )
+
+add_executable(CPP20_8 main8.cpp)
