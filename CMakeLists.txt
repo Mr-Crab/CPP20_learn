@@ -38,3 +38,10 @@ target_sources(CPP20_6
         FILE_SET cxx_modules2 TYPE CXX_MODULES FILES
         airline_ticket.cppm
 )
+
+add_executable(CPP20_7 main7.cpp Rect.cpp)
+target_sources(CPP20_7
+    PRIVATE
+        FILE_SET cxx_modules3 TYPE CXX_MODULES FILES
+        Rect.cppm
+)
