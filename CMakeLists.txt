@@ -47,3 +47,4 @@ target_sources(CPP20_7
 )
 
 add_executable(CPP20_8 main8.cpp)
+add_executable(CPP20_9 main9.cpp)
