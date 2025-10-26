@@ -17,7 +17,7 @@ target_sources(CH1_CPP20_1
         employee.cppm
 )
 
-target_include_directories(CH1_CPP20_1 PRIVATE ..)
+target_include_directories(CH1_CPP20_1 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_executable(CH1_CPP20_2 main2.cpp)
 add_executable(CH1_CPP20_3 main3.cpp)
@@ -48,3 +48,5 @@ target_sources(CH1_CPP20_7
 
 add_executable(CH1_CPP20_8 main8.cpp)
 add_executable(CH1_CPP20_9 main9.cpp)
+
+add_subdirectory(ProjectExample)
