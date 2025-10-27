@@ -1,0 +1,1 @@
+add_executable(CH2_CPP20_1 main1.cpp)
