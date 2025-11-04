@@ -1,16 +1,5 @@
 #include <iostream>
-
-class Simple {
-    public:
-    Simple() {
-        std::cout << "Simple Constructor: Simple" << std::endl;
-    }
-    ~Simple() {
-        std::cout << "Simple Destructor: ~Simple" << std::endl;
-    }
-};
-
-
+#include "Simple.hpp"
 int main() {
     const std::size_t size{4};
     Simple** mySimplePtrArray { new Simple*[size] };
